@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background-color:#999999; 
+			overflow-x: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row" style="margin-top: 4em">
+			<div class="col-md-3">
+				
+			</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header text-center bg-info"><strong><h5>SIGN UP</h5></strong></div>
+					<div class="card-body">
+						<form method="post" action="reg.php">
+        <div class="input-group form-group">
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><i class="fa fa-user"></i></button>
+      </span>
+      <input type="text" name="fname" class="form-control" id="name" placeholder="Write your Names here" required="">
+        </div>
+
+        <div class="input-group form-group">
+          <!-- <label for="dob">DOB</label> -->
+          <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+      </span>
+      <input type="date" name="dob" class="form-control" id="dob" placeholder="insert your date of birth" required="">
+        </div>
+        <div class="input-group form-group">
+          <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><i class="fa fa-envelope"></i></button>
+      </span>
+          <input type="mail" name="mail" class="form-control" id="email" placeholder="Enter Email" required="">
+        </div>
+        <div class="input-group form-group">
+          <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><i class="fa fa-lock"></i></button>
+      </span>
+         <input type="password" name="passd" class="form-control" id="pass" placeholder="Enter Password"required=""></div>
+<button type="reset" class="btn btn-danger"><samp>Reset</samp></button>
+<button type="submit" class="btn btn-primary"><samp>Register</samp></button>
+<br><br>
+<p class="message">Already a member? <a href="login.html">Login</a></p>	
+						</div>
+					</div>
+				</div>
+			<div class="col-md-3">
+				
+			</div>
+		</div>
+	</div>
+
+			<footer class="fixed-bottom" style="background-color: #999999">
+<div class="container clearfix">
+			<ul class="flex-center ul">
+			<div class="copy-right text-center" style="background-color: #999999">
+                <hr style="margin: 0px;padding: 0px">
+                    &copy; 2018 <a  target="_blank ">Mtaani_Tech Developers</a>. All Rights Reserved.
+                </div>
+            </footer>
+			
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+<html lang="en">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+body{
+	background-color: #999999;
+}
+
+.nav-link{
+	color: black;
+}
+.ul{
+	list-style-type: none;
+}
+</style>
+
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		body {
+	background: #ECECEC;
+}
+
+.footer {
+	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+	margin-top: 24px;
+}
+
+.container {
+	max-width: 720px;
+	margin: 24px auto 48px auto;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 2.5rem;
+}
+
+.row {
+	margin-top: 12px;
+}
+
+.column {
+	display: inline-block;
+	text-align: center;
+}
+
+figure {
+	overflow: hidden;
+}
+
+a p {
+	color: black;
+	margin-top: 8px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.column img {
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+
+/* CSS Image Hover. Created refering to Naoya's Pen: https://codepen.io/nxworld/pen/ZYNOBZ */
+/*Sepia*/
+.column#sepia img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.column#sepia:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+/*GrayScale*/
+.column#grayscale img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.column#grayscale:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/*Zoom In*/
+.column#zoomIn img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.column#zoomIn:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/*Zoom Out*/
+.column#zoomOut img {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.column#zoomOut:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* 3D Transform. Craeted refering to Dudley Storey's Pen: https://codepen.io/dudleystorey/pen/KFLJp */
+.tdimension {
+	width: 300px;
+	height: 300px;
+	margin: 20px auto 40px auto;
+	perspective: 1000px;
+}
+.tdimension a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/e8346826957515.56361c2106f3f.png");
+	background-size: cover;
+	transform-style: preserve-3d;
+	transform: rotateX(70deg);
+	transition: all 0.8s;	
+}
+.tdimension:hover a {
+	transform: rotateX(20deg); 	
+}	
+.tdimension a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));    
+   	transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+/*With Simple Caption*/
+.column#caption {
+	position: relative;
+}
+.column#caption .text {
+		position: absolute;		
+    top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;			
+}
+.column#caption .text h1 {		
+		margin: 0;		
+		color: white;
+}
+.column#caption:hover .text {
+	opacity: 1;
+	
+}
+.column#caption:hover img {
+	-webkit-filter: sepia(90%);
+}
+
+/* Craeted refering to LittleSnippets.net Pen: https://codepen.io/littlesnippets/pen/adLELd */
+.frame {
+	text-align: center;	
+	position: relative;
+	cursor: pointer;	
+	perspective: 500px; 
+}
+.frame img {
+	width: 300px;
+	height: 300px;
+}
+.frame .details {
+	width: 70%;
+	height: 80%;	
+	padding: 5% 8%;
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateY(90deg);
+	transform-origin: 50%;
+	background: rgba(255,255,255,0.9);	
+	opacity: 0;
+	transition: all 0.4s ease-in;
+	
+}
+.frame:hover .details {
+	transform: translate(-50%, -50%) rotateY(0deg);
+	opacity: 1;
+}
+ </style>
+</head>
+<body>
+	<div class="container">
+		<div class="text-center"><a href = "#"><h3>Meet Mtaani_Tech Team</h3></a></div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+		    <div class = "frame col-xs-6">
+			<img src = "imgs/1.jpg" class="img-fluid">
+			<div class = "details">
+				<h4>John Victor</h4>
+				<p class="bg-primary">Web Developer,Android,Software Developer,Data Analyst,PC troubleshooter and Cyber Crime</p>
+			</div>
+			
+		</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+							<div class = "frame col-xs-6">
+			<img src = "imgs/1a.jpg" class="img-fluid">
+			<div class = "details">
+				<h4>Laurent Mboya</h4>
+				<p class="bg-secondary">Web Developer,Software developer,PC troubleshooter,Networker and Graphic Designer</p>
+			</div>
+			
+		</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+						<div class = "frame col-xs-6">
+			<img src = "imgs/fx.jpg" class="img-fluid">
+			<div class = "details">
+				<h4>Bozzie Williams</h4>
+				<p class="bg-info">Web designer,Data Analyst,Networker,PC troubleshooter and Data Scientist</p>
+			</div>
+			
+		</div>
+				</div>
+			</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+		    <div class = "frame col-xs-6">
+			<img src = "imgs/1.jpg" class="img-fluid">
+			<div class = "details">
+				<h4>John Victor</h4>
+				<p class="bg-primary">Web Developer,Android,Software Developer,Data Analyst,PC troubleshooter and Cyber Crime</p>
+			</div>
+			
+		</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+							<div class = "frame col-xs-6">
+			<img src = "imgs/1a.jpg" class="img-fluid">
+			<div class = "details">
+				<h4>Laurent Mboya</h4>
+				<p class="bg-secondary">Web Developer,Software developer,PC troubleshooter,Networker and Graphic Designer</p>
+			</div>
+			
+		</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+						<div class = "frame col-xs-6">
+			<img src = "imgs/fx.jpg" class="img-fluid">
+			<div class = "details">
+				<h4>Bozzie Williams</h4>
+				<p class="bg-info">Web designer,Data Analyst,Networker,PC troubleshooter and Data Scientist</p>
+			</div>
+			
+		</div>
+				</div>
+			</div>
+	</div>
+	
+  	<br><br>
+<footer class="fixed-bottom" style="background-color: #999999">
+			<ul class="flex-center ul">
+			<div class="copy-right text-center" style="background-color: #999999">
+                <hr style="margin: 0px;padding: 0px">
+                    &copy; 2018 <a  target="_blank ">Mtaani_Tech Developers</a>. All Rights Reserved.
+                </div>
+            </footer>
+</body>
+</html>
+
+
+
+
+					
